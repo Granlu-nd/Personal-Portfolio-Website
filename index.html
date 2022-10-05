@@ -1,144 +1,150 @@
 <html>
-   <head>
-      <title>Wyatt Granlund</title>
-   </head>
-   <style>
+
+<head>
+  <title>Wyatt Granlund</title>
+</head>
+<style>
+  div.into {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  div.into p {
+    animation: into 3s;
+  }
+
+  @keyframes into {
+    from {
+      margin-left: 50%;
+      width: 150%;
+    }
+
+    to {
+      right: 0%;
+      width: 100%;
+    }
+  }
 
 
-div.into 
-{
-           width:100%;
-           overflow:hidden;
-           margin-top: 100px;
-         }
-         div.into p {
-           animation: into 3s;
-         }
-         
-         @keyframes into {
-           from {
-             margin-left: 50%;
-             width: 150%; 
-           }
-         
-           to {
-             right: 0%;
-             width: 100%;
-           }
-         }
+  .fade-in-text {
+    width: 90%;
+    top: 20%;
+    position: absolute;
+    left: 5%;
+    animation: fadeIn 7s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+  }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
 
-    .fade-in-text {
-   width: 90%;
-   top: 20%;
-   position: absolute;
-   left: 5%;
-  animation: fadeIn 7s;
-  -webkit-animation: fadeIn 7s;
-  -moz-animation: fadeIn 7s;
-  -o-animation: fadeIn 7s;
-  -ms-animation: fadeIn 7s;
-}
+    100% {
+      opacity: 1;
+    }
+  }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+  a.button1 {
+    align-items: stretch;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    display: inline-block;
+    padding: 2em 5em;
+    border: .5em solid #31a5ed;
+    text-decoration: none;
+    color: #31a5ed;
+    text-align: center;
+    transition: all 0.2s;
+    min-height: 1vh;
+  }
 
-a.button1{
-align-items: stretch;
-position: absolute;
-top: 60%;
-left: 40%;
-display:inline-block;
-padding:2em 5em;
-border:.5em solid #31a5ed;
-text-decoration:none;
-color:#31a5ed;
-text-align:center;
-transition: all 0.2s;
-min-height: 1vh;
-}
-a.button1:hover{
-color: black;
-background-color:#31a5ed;
-}
+  a.button1:hover {
+    color: black;
+    background-color: #31a5ed;
+  }
 
-a.button2{
-align-items: stretch;
-position: absolute;
-top: 60%;
-left: 10%;
-display:inline-block;
-padding:2em 5em;
-border:.5em solid #31a5ed;
-text-decoration:none;
-color:#31a5ed;
-text-align:center;
-transition: all 0.2s;
-min-height: 1vh;
-}
-a.button2:hover{
-color: black;
-background-color:#31a5ed;
-}
+  a.button2 {
+    align-items: stretch;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: inline-block;
+    padding: 2em 5em;
+    border: .5em solid #31a5ed;
+    text-decoration: none;
+    color: #31a5ed;
+    text-align: center;
+    transition: all 0.2s;
+    min-height: 1vh;
+  }
 
-a.button3{
-align-items: stretch;
-position: absolute;
-top: 60%;
-left: 70%;
-display:inline-block;
-padding:2em 5em;
-border:.5em solid #31a5ed;
-text-decoration:none;
-color:#31a5ed;
-text-align:center;
-transition: all 0.2s;
-min-height: 1vh;
-}
-a.button3:hover{
-color: black;
-background-color:#31a5ed;
-}
-       
-   </style>
-   <body bgcolor="#272071">
-      <div class="into">
-      <center>
-         <p><font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 3vw;"><b>Hello, I'm <font color="#40F5C9"><i>Wyatt Granlund</i></font>; This is my page.</b></font></p> 
-      </center>
-      </div>
+  a.button2:hover {
+    color: black;
+    background-color: #31a5ed;
+  }
 
-      <div class="fade-in-text"> 
-         <center>
-            <p><font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2.5vw;">
-               I'm a student attending University of Central Florida in the Fall of 2022. I'm interested in 
-               learning about AI, Mobile Apps, Software Development, along with anything tech related.
-               
-            </font></p> 
-         </center>
-         </div>
+  a.button3 {
+    align-items: stretch;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    display: inline-block;
+    padding: 2em 5em;
+    border: .5em solid #31a5ed;
+    text-decoration: none;
+    color: #31a5ed;
+    text-align: center;
+    transition: all 0.2s;
+    min-height: 1vh;
+  }
 
-   <center>
-         <a href="https://www.linkedin.com/in/wyatt-granlund-22189221b/"  class="button1" target="_blank"><font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>LinkedIn</b></font></a>      
-</center>
+  a.button3:hover {
+    color: black;
+    background-color: #31a5ed;
+  }
+</style>
 
-<center>
-   <a href="https://github.com/Granlu-nd"  class="button2" target="_blank"><font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>GitHub</b></font></a>      
-</center
+<body bgcolor="#272071">
+  <div class="into">
+    <center>
+      <p>
+        <font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 3vw;"><b>Hello, I'm <font
+              color="#40F5C9"><i>Wyatt Granlund</i></font>; This is my page.</b></font>
+      </p>
+    </center>
+  </div>
 
-<center>
-   <a href="something"  class="button3" target="_blank"><font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>Resume</b></font></a>      
-</center
+  <div class="fade-in-text">
+    <center>
+      <p>
+        <font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2.5vw;">
+          I'm a student attending University of Central Florida in the Fall of 2022. I'm interested in
+          learning about AI, Mobile Apps, Software Development, along with anything tech related.
 
-         
+        </font>
+      </p>
+    </center>
+  </div>
 
-      
+  <center>
+    <a href="https://www.linkedin.com/in/wyatt-granlund-22189221b/" class="button1" target="_blank">
+      <font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>LinkedIn</b></font>
+    </a>
+  </center>
 
-
-   
-   
-
-      
-         
+  <center>
+    <a href="https://github.com/Granlu-nd" class="button2" target="_blank">
+      <font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>GitHub</b></font>
+    </a>
+  </center <center>
+  <a href="https://drive.google.com/file/d/1f48FfDKoZ0nsggmrjrOFVCiFbZvRC2K0/view?usp=sharing" class="button3"
+    target="_blank">
+    <font color="E7E8F1" style="font-family:'Courier New', Courier, monospace; font-size: 2vw;"><b>Resume</b></font>
+  </a>
+  </center
